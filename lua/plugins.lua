@@ -20,5 +20,6 @@ return require('packer').startup(function()
     use { 'tpope/vim-commentary' }
     use { 'thaerkh/vim-indentguides' }
     use { 'p00f/nvim-ts-rainbow' }
+    use { 'norcalli/snippets.nvim' }
 
 end)

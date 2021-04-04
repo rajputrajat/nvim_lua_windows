@@ -89,6 +89,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\rajput\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\rust.vim"
   },
+  ["snippets.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\rajput\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\snippets.nvim"
+  },
   ["srcery-vim"] = {
     loaded = true,
     path = "C:\\Users\\rajput\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\srcery-vim"
