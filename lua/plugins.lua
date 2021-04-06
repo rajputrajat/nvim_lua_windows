@@ -5,7 +5,7 @@ return require('packer').startup(function()
     use { 'neovim/nvim-lspconfig' }
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use { 'nvim-lua/completion-nvim' }
-    use { 'nvim-lua/diagnostic-nvim' }
+    -- use { 'nvim-lua/diagnostic-nvim' }
     use { 'nvim-lua/lsp_extensions.nvim' }
     use {
         'nvim-telescope/telescope.nvim',
@@ -17,7 +17,7 @@ return require('packer').startup(function()
     use { 'hoob3rt/lualine.nvim' }
     use { 'kyazdani42/nvim-web-devicons' }
     use { 'rust-lang/rust.vim' }
-    use { 'simrat39/rust-tools.nvim' }
+    -- use { 'simrat39/rust-tools.nvim' }
     use { 'kyazdani42/nvim-tree.lua' }
     use { 'tpope/vim-commentary' }
     use { 'thaerkh/vim-indentguides' }

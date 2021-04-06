@@ -20,20 +20,3 @@ require('lsp_lua')
 require('config.colorscheme')  -- color scheme
 require('config.completion')   -- completion
 require('lualine').setup{}
-require'snippets'.use_suggested_mappings()
-
-require'nvim-treesitter.configs'.setup {
-    rainbow = {
-        enable = true
-    }
-}
-require'nvim-treesitter.configs'.setup {
-    indent = {
-        enable = true
-    }
-}
-require'nvim-treesitter.configs'.setup {
-    highlight = {
-        enable = true
-    }
-}

@@ -36,10 +36,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\rajput\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\completion-nvim"
   },
-  ["diagnostic-nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\rajput\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\diagnostic-nvim"
-  },
   ["gruvbox-material"] = {
     loaded = true,
     path = "C:\\Users\\rajput\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox-material"
@@ -84,10 +80,6 @@ _G.packer_plugins = {
   ["popup.nvim"] = {
     loaded = true,
     path = "C:\\Users\\rajput\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\popup.nvim"
-  },
-  ["rust-tools.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\rajput\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\rust-tools.nvim"
   },
   ["rust.vim"] = {
     loaded = true,
