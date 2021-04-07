@@ -4,7 +4,6 @@ return require('packer').startup(function()
 
     use { 'neovim/nvim-lspconfig' }
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-    use { 'nvim-lua/completion-nvim' }
     use { 'nvim-lua/lsp_extensions.nvim' }
     use {
         'nvim-telescope/telescope.nvim',
@@ -21,5 +20,6 @@ return require('packer').startup(function()
     use { 'norcalli/snippets.nvim' }
     use { 'tjdevries/colorbuddy.nvim' }
     use { 'tjdevries/gruvbuddy.nvim' }
+    use { 'hrsh7th/nvim-compe' }
 
 end)
