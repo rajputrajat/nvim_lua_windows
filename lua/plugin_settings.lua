@@ -16,6 +16,9 @@ require'nvim-treesitter.configs'.setup {
     }
 }
 
+vim.g.tagbar_autofocus = 0
+vim.g.tagbar_width = 50
+vim.g.tagbar_position = "left"
 vim.api.nvim_command([[
 autocmd BufEnter,BufWinEnter,TabEnter *.rs :lua require'lsp_extensions'.inlay_hints{ prefix = '', highlight = "Comment", enabled = {"TypeHint", "ChainingHint", "ParameterHint"} }
 ]])

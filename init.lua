@@ -13,10 +13,10 @@ end
 vim.cmd [[packadd packer.nvim]]
 vim.cmd 'autocmd BufWritePost plugins.lua PackerCompile' -- Auto compile when there are changes in plugins.lua
 
-require('plugins')
-require('plugin_settings')
 require('keymappings')
 require('lsp_lua')
 require('config.colorscheme')  -- color scheme
 require('config.completion')   -- completion
 require('lualine').setup{}
+require('plugins')
+require('plugin_settings')
