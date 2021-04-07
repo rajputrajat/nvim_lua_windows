@@ -32,13 +32,17 @@ local function try_loadstring(s, component, name)
 end
 
 _G.packer_plugins = {
+  ["colorbuddy.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\rajput\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\colorbuddy.nvim"
+  },
   ["completion-nvim"] = {
     loaded = true,
     path = "C:\\Users\\rajput\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\completion-nvim"
   },
-  ["gruvbox-material"] = {
+  ["gruvbuddy.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\rajput\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox-material"
+    path = "C:\\Users\\rajput\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbuddy.nvim"
   },
   ["lsp_extensions.nvim"] = {
     loaded = true,
@@ -88,10 +92,6 @@ _G.packer_plugins = {
   ["snippets.nvim"] = {
     loaded = true,
     path = "C:\\Users\\rajput\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\snippets.nvim"
-  },
-  ["srcery-vim"] = {
-    loaded = true,
-    path = "C:\\Users\\rajput\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\srcery-vim"
   },
   ["telescope.nvim"] = {
     loaded = true,
