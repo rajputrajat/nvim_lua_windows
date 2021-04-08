@@ -14,6 +14,10 @@ local on_attach = function(client, bufnr)
     buf_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
     buf_set_keymap('n', '[d', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>', opts)
     buf_set_keymap('n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
+    buf_set_keymap('n', '<leader>fd',        '<cmd>Telescope lsp_definitions<cr>', opts)
+    buf_set_keymap('n', '<leader>fr',        '<cmd>Telescope lsp_references<cr>', opts)
+    buf_set_keymap('n', '<leader>fs',        '<cmd>Telescope lsp_document_symbols<cr>', opts)
+    buf_set_keymap('n', '<leader>fw',        '<cmd>Telescope lsp_workspace_symbols<cr>', opts)
 end
 
 local nvim_lsp = require'lspconfig'

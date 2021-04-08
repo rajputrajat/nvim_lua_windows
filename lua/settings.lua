@@ -27,9 +27,12 @@ utils.opt('o', 'termguicolors', true)
 utils.opt('o', 'cmdheight', 2)
 utils.opt('o', 'laststatus', 2)
 utils.opt('o', 'autoindent', true)
+utils.opt('w', 'wrap', false)
 utils.opt('w', 'numberwidth', 5)
 utils.opt('w', 'list', true)
 utils.opt('w', 'signcolumn', 'yes')
+utils.opt('w', 'foldmethod', 'expr')
+utils.opt('w', 'foldexpr', 'nvim_treesitter#foldexpr()')
 
 -- rust fmt
 vim.g.rustfmt_autosave = 1
