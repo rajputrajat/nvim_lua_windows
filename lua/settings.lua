@@ -31,8 +31,6 @@ utils.opt('w', 'wrap', false)
 utils.opt('w', 'numberwidth', 5)
 utils.opt('w', 'list', true)
 utils.opt('w', 'signcolumn', 'yes')
-utils.opt('w', 'foldmethod', 'expr')
-utils.opt('w', 'foldexpr', 'nvim_treesitter#foldexpr()')
 
 -- rust fmt
 vim.g.rustfmt_autosave = 1
@@ -44,9 +42,6 @@ vim.g.nvim_tree_side = 'right'
 vim.g.nvim_tree_width = 45
 vim.g.nvim_tree_indent_markers = 1
 vim.g.nvim_tree_hide_dotfiles = 1
-
--- srcery theme
-vim.g.srcery_italic = 1
 
 -- Highlight on yank
 vim.cmd 'au TextYankPost * lua vim.highlight.on_yank {on_visual = false}'
