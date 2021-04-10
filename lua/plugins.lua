@@ -21,6 +21,8 @@ return require('packer').startup(function()
     use { 'tjdevries/colorbuddy.nvim' }
     use { 'tjdevries/gruvbuddy.nvim' }
     use { 'hrsh7th/nvim-compe' }
+    use { 'windwp/nvim-autopairs' }
+    use { 'honza/vim-snippets' }
     -- use { 'mtdl9/vim-log-highlighting' }
 
 end)

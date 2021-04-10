@@ -48,6 +48,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\rajput\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim"
   },
+  ["nvim-autopairs"] = {
+    loaded = true,
+    path = "C:\\Users\\rajput\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-autopairs"
+  },
   ["nvim-compe"] = {
     loaded = true,
     path = "C:\\Users\\rajput\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-compe"
@@ -104,6 +108,10 @@ _G.packer_plugins = {
   ["vim-indentguides"] = {
     loaded = true,
     path = "C:\\Users\\rajput\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-indentguides"
+  },
+  ["vim-snippets"] = {
+    loaded = true,
+    path = "C:\\Users\\rajput\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-snippets"
   }
 }
 

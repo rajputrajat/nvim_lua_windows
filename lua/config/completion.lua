@@ -28,7 +28,7 @@ require'compe'.setup {
         calc = true;
         nvim_lsp = true;
         nvim_lua = true;
-        vsnip = true;
+        snippets = true;
         -- nvim_treesitter = true; => as per documentation, it is sometimes very slow
         -- tags = true;
     };
