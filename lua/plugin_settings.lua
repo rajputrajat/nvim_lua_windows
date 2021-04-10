@@ -1,5 +1,3 @@
-require'snippets'.use_suggested_mappings()
-
 require'nvim-treesitter.configs'.setup {
     rainbow = {
         enable = true

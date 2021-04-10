@@ -22,7 +22,8 @@ return require('packer').startup(function()
     use { 'tjdevries/gruvbuddy.nvim' }
     use { 'hrsh7th/nvim-compe' }
     use { 'windwp/nvim-autopairs' }
-    use { 'honza/vim-snippets' }
+    -- use { 'honza/vim-snippets' }
+    -- use { 'ray-x/lsp_signature.nvim' }
     -- use { 'mtdl9/vim-log-highlighting' }
 
 end)
