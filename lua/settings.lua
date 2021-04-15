@@ -47,3 +47,4 @@ vim.g.nvim_tree_hide_dotfiles = 1
 vim.cmd 'au TextYankPost * lua vim.highlight.on_yank {on_visual = false}'
 
 vim.g.python3_host_prog = 'C:/Python39/python.exe'
+-- vim.o.guifont = 'Hack NF'
