@@ -1,1 +1,1 @@
-set gfn=Hack\ Nerd\ Font\ Mono:h15
+set gfn=JetBrainsMono\ Nerd\ Font\ Mono:h15
