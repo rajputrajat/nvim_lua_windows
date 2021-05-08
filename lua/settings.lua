@@ -54,3 +54,6 @@ vim.api.nvim_set_keymap(
   ":lua require'centerpad'.toggle{ leftpad = 50, rightpad = 40 }<cr>",
   { noremap = true, silent = true })
 
+vim.cmd 'hi ActiveWindow ctermbg=None ctermfg=None guibg=#212121'
+vim.cmd 'hi InactiveWindow guibg=#424242'
+vim.cmd 'set winhighlight=Normal:ActiveWindow,NormalNC:InactiveWindow'
