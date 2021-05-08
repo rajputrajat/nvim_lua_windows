@@ -48,3 +48,9 @@ vim.cmd 'au TextYankPost * lua vim.highlight.on_yank {on_visual = false}'
 
 vim.g.python3_host_prog = 'C:/Python39/python.exe'
 -- vim.o.guifont = 'Hack NF'
+vim.api.nvim_set_keymap(
+  'n',
+  '<leader>z',
+  ":lua require'centerpad'.toggle{ leftpad = 50, rightpad = 40 }<cr>",
+  { noremap = true, silent = true })
+
