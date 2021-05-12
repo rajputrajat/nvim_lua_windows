@@ -31,6 +31,5 @@ Group.new('identifier',     c.green,            g.identifier,       s.italic)
 Group.new('number',         c.bright_yellow,    c.background,       s.bold + s.italic)
 Group.new('type',           g.type,             g.type,             g.type - s.italic)
 Group.new('TSvariable',     c.bright_yellow,    g.todo,             g.todo)
-Group.new('TSOperator',     c.bright_yellow,    c.background,       s.bold + s.italic)
 
 Group.new('colorcolumn',    c.none,             c.grey)
