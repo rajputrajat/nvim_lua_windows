@@ -48,11 +48,21 @@ vim.cmd 'au TextYankPost * lua vim.highlight.on_yank {on_visual = false}'
 
 vim.g.python3_host_prog = 'C:/Python39/python.exe'
 -- vim.o.guifont = 'Hack NF'
-vim.api.nvim_set_keymap(
-  'n',
-  '<leader>z',
-  ":lua require'centerpad'.toggle{ leftpad = 50, rightpad = 40 }<cr>",
-  { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap(
+--   'n',
+--   '<leader>z',
+--   ":lua require'centerpad'.toggle{ leftpad = 50 }<cr>",
+--   { noremap = true, silent = true })
+
+vim.api.nvim_exec(
+[[
+let g:tagbar_autofocus=0
+let g:tagbar_width=50
+let g:tagbar_position="left"
+autocmd BufEnter *.py,*.rs,*.c*,*.h* :call tagbar#autoopen(0)
+autocmd BufWinLeave *.py,*.rs,*.c*,*.h* :TagbarClose
+nnoremap <Leader>x :TagbarToggle<CR>'
+]], true)
 
 vim.cmd 'hi ActiveWindow ctermbg=None ctermfg=None guibg=#212121'
 vim.cmd 'hi InactiveWindow guibg=#424242'
