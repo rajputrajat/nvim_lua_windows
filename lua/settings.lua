@@ -58,7 +58,7 @@ vim.api.nvim_exec(
 [[
 let g:tagbar_autofocus=0
 let g:tagbar_width=50
-let g:tagbar_position="left"
+let g:tagbar_position="right"
 autocmd BufEnter *.py,*.rs,*.c*,*.h* :call tagbar#autoopen(0)
 autocmd BufWinLeave *.py,*.rs,*.c*,*.h* :TagbarClose
 nnoremap <Leader>x :TagbarToggle<CR>'
