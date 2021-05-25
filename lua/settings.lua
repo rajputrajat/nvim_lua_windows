@@ -54,15 +54,15 @@ vim.g.python3_host_prog = 'C:/Python39/python.exe'
 --   ":lua require'centerpad'.toggle{ leftpad = 50 }<cr>",
 --   { noremap = true, silent = true })
 
-vim.api.nvim_exec(
-[[
-let g:tagbar_autofocus=0
-let g:tagbar_width=50
-let g:tagbar_position="right"
-autocmd BufEnter *.py,*.rs,*.c*,*.h* :call tagbar#autoopen(0)
-autocmd BufWinLeave *.py,*.rs,*.c*,*.h* :TagbarClose
-nnoremap <Leader>x :TagbarToggle<CR>'
-]], true)
+-- vim.api.nvim_exec(
+-- [[
+-- let g:tagbar_autofocus=0
+-- let g:tagbar_width=50
+-- let g:tagbar_position="right"
+-- autocmd BufEnter *.py,*.rs,*.c*,*.h* :call tagbar#autoopen(0)
+-- autocmd BufWinLeave *.py,*.rs,*.c*,*.h* :TagbarClose
+-- nnoremap <Leader>x :TagbarToggle<CR>'
+-- ]], true)
 
 vim.cmd 'hi ActiveWindow ctermbg=None ctermfg=None guibg=#212121'
 vim.cmd 'hi InactiveWindow guibg=#424242'
