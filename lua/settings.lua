@@ -32,6 +32,8 @@ utils.opt('w', 'numberwidth', 5)
 utils.opt('w', 'list', true)
 utils.opt('w', 'signcolumn', 'yes')
 
+vim.g.autochdir = 1
+
 -- nvim tree
 vim.g.nvim_tree_follow = 1
 vim.g.nvim_tree_update_cwd = 1
