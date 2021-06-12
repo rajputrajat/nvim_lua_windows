@@ -26,9 +26,9 @@ Group.new('TSFunction',     c.light_green,      g.TSFunction,       g.TSFunction
 Group.new('Special',        c.light_green,      g.special,          g.Special - s.bold)
 Group.new('type',           c.light_blue,       g.type,             g.type )
 Group.new('comment',        g.comment,          g.comment,          s.italic )
-Group.new('string',         c.light_purple,     c.background,       s.bold + s.italic )
+Group.new('string',         c.light_purple,     g.string,           s.bold + s.italic )
 Group.new('identifier',     c.green,            g.identifier,       s.italic)
-Group.new('number',         c.bright_yellow,    c.background,       s.bold + s.italic)
+Group.new('number',         c.bright_yellow,    g.number,           s.bold + s.italic)
 Group.new('type',           g.type,             g.type,             g.type - s.italic)
 Group.new('TSvariable',     c.bright_yellow,    g.todo,             g.todo)
 

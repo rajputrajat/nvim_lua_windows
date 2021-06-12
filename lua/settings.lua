@@ -32,6 +32,14 @@ utils.opt('w', 'numberwidth', 5)
 utils.opt('w', 'list', true)
 utils.opt('w', 'signcolumn', 'yes')
 
+-- nvim tree
+vim.g.nvim_tree_follow = 1
+vim.g.nvim_tree_update_cwd = 1
+vim.g.nvim_tree_auto_open = 1
+vim.g.nvim_tree_auto_close = 1
+vim.g.nvim_tree_indent_markers = 1
+vim.g.nvim_tree_highlight_opened_files = 1
+
 -- rust fmt
 vim.g.rustfmt_autosave = 1
 vim.g.rustfmt_emit_files = 1
