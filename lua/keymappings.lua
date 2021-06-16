@@ -5,6 +5,7 @@ utils.map('n', '<leader>n',         ':NvimTreeToggle<CR>')
 
 utils.map('n', '<leader><space>',   '<cmd>Telescope find_files<cr>')
 utils.map('n', '<leader>ff',        '<cmd>Telescope live_grep<cr>')
+utils.map('n', '<leader>g',        '<cmd>Telescope grep_string<cr>')
 utils.map('n', '<leader>b',         '<cmd>Telescope buffers<cr>')
 utils.map('n', '<leader>fh',        '<cmd>Telescope help_tags<cr>')
 utils.map('n', '<leader>l',         '<cmd>Telescope current_buffer_fuzzy_find<cr>')
