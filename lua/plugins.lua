@@ -11,6 +11,7 @@ return require('packer').startup(function()
     }
 
     use { 'hoob3rt/lualine.nvim' }
+    use { 'simrat39/rust-tools.nvim' }
     use { 'kyazdani42/nvim-web-devicons' }
     use { 'rust-lang/rust.vim' }
     use { 'kyazdani42/nvim-tree.lua' }
@@ -22,10 +23,8 @@ return require('packer').startup(function()
     use { 'tjdevries/gruvbuddy.nvim' }
     use { 'hrsh7th/nvim-compe' }
     use { 'windwp/nvim-autopairs' }
+    use { 'simrat39/symbols-outline.nvim' }
 
-    -- use { 'preservim/tagbar' }
-    -- use { 'smithbm2316/centerpad.nvim' }
-    -- use { 'junegunn/goyo.vim' }
     -- use { 'honza/vim-snippets' }
     -- use { 'ray-x/lsp_signature.nvim' }
     -- use { 'mtdl9/vim-log-highlighting' }

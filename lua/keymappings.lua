@@ -26,16 +26,3 @@ if (fd_cond or fr_cond or fs_cond or fw_cond) then
     utils.map('n', '<leader>fs',         '<cmd>Telescope treesitter<cr>')
     utils.map('n', '<leader>fw',         '<cmd>Telescope treesitter<cr>')
 end
-
--- utils.map('t', '<A-h>'              '<C-\\><C-N><C-w>h')
--- utils.map('t', '<A-j>'              '<C-\\><C-N><C-w>j')
--- utils.map('t', '<A-k>'              '<C-\\><C-N><C-w>k')
--- utils.map('t', '<A-l>'              '<C-\\><C-N><C-w>l')
--- utils.map('i', '<A-h>'              '<C-\\><C-N><C-w>h')
--- utils.map('i', '<A-j>'              '<C-\\><C-N><C-w>j')
--- utils.map('i', '<A-k>'              '<C-\\><C-N><C-w>k')
--- utils.map('i', '<A-l>'              '<C-\\><C-N><C-w>l')
--- utils.map('n', '<A-h>'              '<C-w>h')
--- utils.map('n', '<A-j>'              '<C-w>j')
--- utils.map('n', '<A-k>'              '<C-w>k')
--- utils.map('n', '<A-l>'              '<C-w>l')
