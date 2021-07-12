@@ -24,6 +24,8 @@ return require('packer').startup(function()
     use { 'hrsh7th/nvim-compe' }
     use { 'windwp/nvim-autopairs' }
     use { 'simrat39/symbols-outline.nvim' }
+    use { 'ray-x/lsp_signature.nvim' }
+    use { 'ray-x/navigator.lua' }
 
     -- use { 'honza/vim-snippets' }
     -- use { 'ray-x/lsp_signature.nvim' }

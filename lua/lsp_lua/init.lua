@@ -18,6 +18,14 @@ local on_attach = function(client, bufnr)
     buf_set_keymap('n', '<leader>fr',        '<cmd>Telescope lsp_references<cr>', opts)
     buf_set_keymap('n', '<leader>fs',        '<cmd>Telescope lsp_document_symbols<cr>', opts)
     buf_set_keymap('n', '<leader>fw',        '<cmd>Telescope lsp_workspace_symbols<cr>', opts)
+
+    require "lsp_signature".on_attach({
+        bind = true, -- This is mandatory, otherwise border config won't get registered.
+        handler_opts = {
+            border = "single"
+        }
+    })
+    require'navigator'.setup()
 end
 
 local nvim_lsp = require'lspconfig'
