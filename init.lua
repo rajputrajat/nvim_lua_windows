@@ -3,8 +3,6 @@ vim.g.mapleader = ' '
 local fn = vim.fn
 local execute = vim.api.nvim_command
 
-require('settings')
-
 -- Auto install packer.nvim if not exists
 local install_path = fn.stdpath('data')..'/site/pack/packer/opt/packer.nvim'
 if fn.empty(fn.glob(install_path)) > 0 then
@@ -13,10 +11,12 @@ end
 vim.cmd [[packadd packer.nvim]]
 vim.cmd 'autocmd BufWritePost plugins.lua PackerCompile' -- Auto compile when there are changes in plugins.lua
 
-require('keymappings')
-require('lsp_lua')
-require('config.colorscheme')  -- color scheme
-require('config.completion')   -- completion
-require('lualine').setup{}
 require('plugins')
 require('plugin_settings')
+require('lsp_lua')
+require('config.completion')   -- completion
+
+require('config.colorscheme')  -- color scheme
+require('lualine').setup{}
+require('keymappings')
+require('settings')
