@@ -24,5 +24,6 @@ return require('packer').startup(function()
     use { 'windwp/nvim-autopairs' }
     use { 'simrat39/rust-tools.nvim' }
     use { 'ray-x/lsp_signature.nvim' }
+    use { 'simrat39/symbols-outline.nvim' }
 
 end)
