@@ -33,7 +33,7 @@ utils.opt('w', 'list', true)
 utils.opt('w', 'signcolumn', 'yes')
 utils.opt('w', 'foldmethod', 'expr')
 utils.opt('w', 'foldexpr', 'nvim_treesitter#foldexpr()')
-utils.opt('w', 'foldlevelstart', 4)
+utils.opt('o', 'foldlevelstart', 4)
 
 -- nvim tree
 vim.g.nvim_tree_follow = 1
