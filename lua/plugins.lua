@@ -18,8 +18,8 @@ return require('packer').startup(function()
     use { 'thaerkh/vim-indentguides' }
     use { 'p00f/nvim-ts-rainbow' }
     use { 'norcalli/snippets.nvim' }
-    use { 'tjdevries/colorbuddy.nvim' }
-    use { 'tjdevries/gruvbuddy.nvim' }
+    -- use { 'tjdevries/colorbuddy.nvim' }
+    -- use { 'tjdevries/gruvbuddy.nvim' }
     use { 'hrsh7th/nvim-compe' }
     use { 'hrsh7th/vim-vsnip' }
     use { 'hrsh7th/vim-vsnip-integ' }
@@ -28,5 +28,6 @@ return require('packer').startup(function()
     use { 'ray-x/lsp_signature.nvim' }
     use { 'simrat39/symbols-outline.nvim' }
     use { 'folke/twilight.nvim' }
+    use { 'sainnhe/sonokai' }
 
 end)
