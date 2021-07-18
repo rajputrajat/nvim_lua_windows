@@ -142,6 +142,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\rajput\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\snippets.nvim"
   },
+  ["symbols-outline.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\rajput\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\symbols-outline.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "C:\\Users\\rajput\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim"
