@@ -24,6 +24,7 @@ return require('packer').startup(function()
     use { 'hrsh7th/vim-vsnip' }
     use { 'hrsh7th/vim-vsnip-integ' }
     use { 'windwp/nvim-autopairs' }
+    use { 'windwp/nvim-ts-autotag' }
     use { 'simrat39/rust-tools.nvim' }
     use { 'ray-x/lsp_signature.nvim' }
     use { 'simrat39/symbols-outline.nvim' }

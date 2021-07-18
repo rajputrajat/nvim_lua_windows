@@ -11,9 +11,13 @@ require'nvim-treesitter.configs'.setup {
     indent = {
         enable = true
     },
+    autotag = {
+        enable = true,
+  }
 }
 
 require('nvim-autopairs').setup()
+require('nvim-ts-autotag').setup()
 
 local opts = {
     tools = { -- rust-tools options
