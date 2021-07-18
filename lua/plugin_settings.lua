@@ -1,17 +1,15 @@
 require'nvim-treesitter.configs'.setup {
     rainbow = {
-        enable = true
-    }
-}
-require'nvim-treesitter.configs'.setup {
-    indent = {
-        enable = true
-    }
-}
-require'nvim-treesitter.configs'.setup {
+        enable = true,
+        extended_mode = true,
+        max_file_lines = 1000,
+    },
     highlight = {
         enable = true
-    }
+    },
+    indent = {
+        enable = true
+    },
 }
 
 require('nvim-autopairs').setup()

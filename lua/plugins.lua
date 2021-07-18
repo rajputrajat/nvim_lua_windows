@@ -21,6 +21,8 @@ return require('packer').startup(function()
     use { 'tjdevries/colorbuddy.nvim' }
     use { 'tjdevries/gruvbuddy.nvim' }
     use { 'hrsh7th/nvim-compe' }
+    use { 'hrsh7th/vim-vsnip' }
+    use { 'hrsh7th/vim-vsnip-integ' }
     use { 'windwp/nvim-autopairs' }
     use { 'simrat39/rust-tools.nvim' }
     use { 'ray-x/lsp_signature.nvim' }

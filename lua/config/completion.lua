@@ -23,14 +23,14 @@ require'compe'.setup {
     max_menu_width = 100;
     documentation = true;
     source = {
+        nvim_lsp = true;
         path = true;
         buffer = true;
         calc = true;
-        nvim_lsp = true;
         nvim_lua = true;
         spell = true;
-        -- snippets = true;
+        vsnips = true;
         -- nvim_treesitter = true; => as per documentation, it is sometimes very slow
-        -- tags = true;
+        tags = true;
     };
 }
