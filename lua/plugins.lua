@@ -27,5 +27,6 @@ return require('packer').startup(function()
     use { 'simrat39/rust-tools.nvim' }
     use { 'ray-x/lsp_signature.nvim' }
     use { 'simrat39/symbols-outline.nvim' }
+    use { 'folke/twilight.nvim' }
 
 end)
