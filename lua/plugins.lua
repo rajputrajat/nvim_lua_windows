@@ -3,6 +3,7 @@ return require('packer').startup(function()
     use {'wbthomason/packer.nvim', opt = true}
 
     use { 'neovim/nvim-lspconfig' }
+    use { 'kabouzeid/nvim-lspinstall' }
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use { 'nvim-lua/lsp_extensions.nvim' }
     use {
@@ -18,8 +19,6 @@ return require('packer').startup(function()
     use { 'thaerkh/vim-indentguides' }
     use { 'p00f/nvim-ts-rainbow' }
     use { 'norcalli/snippets.nvim' }
-    -- use { 'tjdevries/colorbuddy.nvim' }
-    -- use { 'tjdevries/gruvbuddy.nvim' }
     use { 'hrsh7th/nvim-compe' }
     use { 'hrsh7th/vim-vsnip' }
     use { 'hrsh7th/vim-vsnip-integ' }
