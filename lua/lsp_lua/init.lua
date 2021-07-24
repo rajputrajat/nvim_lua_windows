@@ -34,7 +34,23 @@ local function setup_servers()
   require'lspinstall'.setup()
   local servers = require'lspinstall'.installed_servers()
   for _, server in pairs(servers) do
-    require'lspconfig'[server].setup{}
+    require'lspconfig'[server].setup({
+        on_attach=on_attach,
+        settings = {
+            ["rust-analyzer"] = {
+                procMacro = {
+                    enable = true
+                },
+                cargo = {
+                    loadOutDirsFromCheck = true
+                },
+                checkOnSave = {
+                    command = 'clippy',
+                    enable = true
+                },
+            }
+        }
+    })
   end
 end
 setup_servers()
@@ -44,25 +60,25 @@ require'lspinstall'.post_install_hook = function ()
 end
 --
 
-nvim_lsp.rust_analyzer.setup({
-    on_attach=on_attach,
-    settings = {
-        ["rust-analyzer"] = {
-            procMacro = {
-                enable = true
-            },
-            cargo = {
-                loadOutDirsFromCheck = true
-            },
-            checkOnSave = {
-                command = 'clippy',
-                enable = true
-            },
-        }
-    }
-})
-nvim_lsp.tsserver.setup{ on_attach=on_attach }
-nvim_lsp.pyright.setup{ on_attach=on_attach }
+-- nvim_lsp.rust_analyzer.setup({
+--     on_attach=on_attach,
+--     settings = {
+--         ["rust-analyzer"] = {
+--             procMacro = {
+--                 enable = true
+--             },
+--             cargo = {
+--                 loadOutDirsFromCheck = true
+--             },
+--             checkOnSave = {
+--                 command = 'clippy',
+--                 enable = true
+--             },
+--         }
+--     }
+-- })
+-- nvim_lsp.tsserver.setup{ on_attach=on_attach }
+-- nvim_lsp.pyright.setup{ on_attach=on_attach }
 -- nvim_lsp.clangd.setup{ on_attach=on_attach }
 
 -- Enable diagnostics
