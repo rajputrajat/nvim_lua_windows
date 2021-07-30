@@ -165,14 +165,6 @@ _G.packer_plugins = {
   ["vim-indentguides"] = {
     loaded = true,
     path = "C:\\Users\\rajput\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-indentguides"
-  },
-  ["vim-vsnip"] = {
-    loaded = true,
-    path = "C:\\Users\\rajput\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-vsnip"
-  },
-  ["vim-vsnip-integ"] = {
-    loaded = true,
-    path = "C:\\Users\\rajput\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-vsnip-integ"
   }
 }
 

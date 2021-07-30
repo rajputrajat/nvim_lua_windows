@@ -29,7 +29,7 @@ require'compe'.setup {
         calc = true;
         nvim_lua = true;
         spell = true;
-        vsnips = true;
+        -- vsnips = true;
         -- nvim_treesitter = true; => as per documentation, it is sometimes very slow
         tags = true;
     };

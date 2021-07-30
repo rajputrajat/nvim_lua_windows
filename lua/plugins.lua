@@ -20,8 +20,8 @@ return require('packer').startup(function()
     use { 'p00f/nvim-ts-rainbow' }
     use { 'norcalli/snippets.nvim' }
     use { 'hrsh7th/nvim-compe' }
-    use { 'hrsh7th/vim-vsnip' }
-    use { 'hrsh7th/vim-vsnip-integ' }
+    -- use { 'hrsh7th/vim-vsnip' }
+    -- use { 'hrsh7th/vim-vsnip-integ' }
     use { 'windwp/nvim-autopairs' }
     use { 'windwp/nvim-ts-autotag' }
     use { 'simrat39/rust-tools.nvim' }
