@@ -30,11 +30,8 @@ end
 local nvim_lsp = require'lspconfig'
 
 --
-local function setup_servers()
-  require'lspinstall'.setup()
-  local servers = require'lspinstall'.installed_servers()
-  for _, server in pairs(servers) do
-    require'lspconfig'[server].setup({
+if vim.fn.has('win32') then
+    nvim_lsp.rust_analyzer.setup({
         on_attach=on_attach,
         settings = {
             ["rust-analyzer"] = {
@@ -51,35 +48,40 @@ local function setup_servers()
             }
         }
     })
-  end
-end
-setup_servers()
-require'lspinstall'.post_install_hook = function ()
-  setup_servers() -- reload installed servers
-  vim.cmd("bufdo e") -- this triggers the FileType autocmd that starts the server
+    nvim_lsp.tsserver.setup{ on_attach=on_attach }
+    nvim_lsp.pyright.setup{ on_attach=on_attach }
+    nvim_lsp.clangd.setup{ on_attach=on_attach }
+else
+    local function setup_servers()
+        require'lspinstall'.setup()
+        local servers = require'lspinstall'.installed_servers()
+        for _, server in pairs(servers) do
+            require'lspconfig'[server].setup({
+                on_attach=on_attach,
+                settings = {
+                    ["rust-analyzer"] = {
+                        procMacro = {
+                            enable = true
+                        },
+                        cargo = {
+                            loadOutDirsFromCheck = true
+                        },
+                        checkOnSave = {
+                            command = 'clippy',
+                            enable = true
+                        },
+                    }
+                }
+            })
+        end
+    end
+    setup_servers()
+    require'lspinstall'.post_install_hook = function ()
+        setup_servers() -- reload installed servers
+        vim.cmd("bufdo e") -- this triggers the FileType autocmd that starts the server
+    end
 end
 --
-
--- nvim_lsp.rust_analyzer.setup({
---     on_attach=on_attach,
---     settings = {
---         ["rust-analyzer"] = {
---             procMacro = {
---                 enable = true
---             },
---             cargo = {
---                 loadOutDirsFromCheck = true
---             },
---             checkOnSave = {
---                 command = 'clippy',
---                 enable = true
---             },
---         }
---     }
--- })
--- nvim_lsp.tsserver.setup{ on_attach=on_attach }
--- nvim_lsp.pyright.setup{ on_attach=on_attach }
--- nvim_lsp.clangd.setup{ on_attach=on_attach }
 
 -- Enable diagnostics
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(

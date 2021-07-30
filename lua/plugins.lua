@@ -3,7 +3,11 @@ return require('packer').startup(function()
     use {'wbthomason/packer.nvim', opt = true}
 
     use { 'neovim/nvim-lspconfig' }
-    use { 'kabouzeid/nvim-lspinstall' }
+
+    if not vim.fn.has('win32') then
+        use { 'kabouzeid/nvim-lspinstall' }
+    end
+
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use { 'nvim-lua/lsp_extensions.nvim' }
     use {
