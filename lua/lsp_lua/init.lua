@@ -50,7 +50,7 @@ if vim.fn.has('win32') then
     })
     nvim_lsp.tsserver.setup{ on_attach=on_attach }
     nvim_lsp.pyright.setup{ on_attach=on_attach }
-    nvim_lsp.clangd.setup{ on_attach=on_attach }
+    -- nvim_lsp.clangd.setup{ on_attach=on_attach }
 else
     local function setup_servers()
         require'lspinstall'.setup()
